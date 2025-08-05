@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f3f7ff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 50px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 80px;
+  width: 200px;
+}
+
+.logo span {
+  font-size: 50px;
+  font-weight: 800;
+  
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+}
+
+.hire-btn {
+  padding: 10px 20px;
+  background-color: #ff4d4d;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero {
+  padding: 60px 50px;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  color: #ff4d4d;
+  font-weight: bold;
+}
+
+.hero h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #ff4d4d;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.social-icons a {
+  color: #333;
+  font-size: 18px;
+}
+
+.profile-name {
+  font-size: 18px;
+  font-weight: 600;
+}
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 50px 0 20px 0;
+  text-align: center;
+  color: #333;
+}
+
+.portfolio-items, .service-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.portfolio-item, .service {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 280px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.portfolio-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.service i {
+  font-size: 32px;
+  color: #ff4d4d;
+  margin-bottom: 10px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+  font-size: 16px;
+}
+
+.contact-form button {
+  background: #ff4d4d;
+  color: white;
+  padding: 12px;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.about {
+  padding: 30px 50px;
+  background-color: #fff;
+  color: #444;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+</style>
+<body>
+  <header>
+    <div class="logo"> 
+      <img src="portfolio3.png" alt="Logo" />
+      <span></span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </nav>
+    <button class="hire-btn">Hire Me</button>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>I am <span class="highlight">SAILAKSHMI</span></h1>
+      <h2>I'm a Frontend developer</h2>
+      <p>Welcome to my official Portfolio Website where I put all my work related to my designs and many more.</p>
+      <a href="#" class="btn">Download CV</a>
+
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-dribbble"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+
+      <div class="profile-name"></div>
+    </div>
+  </section>
+</body>
+</html>
+<section class="portfolio" id="portfolio">
+  <h2 class="section-title">My Portfolio</h2>
+  <div class="portfolio-items">
+    <div class="portfolio-item">
+      <img src="donate.png" alt="project 1">
+      <h3>Online donation website</h3>
+    </div>
+    <div class="portfolio-item">
+      <img src="blood.png" alt="project 2">
+      <h3>Blood Donation website</h3>
+    </div>
+    <div class="portfolio-item">
+      <img src="thrift1.png" alt="project 3">
+      <h3>Thrift flip store website</h3>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <h2 class="section-title">Services</h2>
+  <div class="service-list">
+    <div class="service">
+      <i class="fas fa-code"></i>
+      <h3>Frontend Development</h3>
+      <p>Responsive and modern UI using HTML, CSS, JavaScript, and frameworks.</p>
+    </div>
+    <div class="service">
+      <i class="fas fa-paint-brush"></i>
+      <h3>Html Design</h3>
+      <p>HTML (HyperText Markup Language) is the foundation of any web page. When we talk about
+         "HTML design",we’re referring to how HTML is used to structure and lay out content on a webpage.</p>
+    </div>
+    <div class="service">
+      <i class="fas fa-laptop-code"></i>
+      <h3>JavaScript frameworks</h3>
+      <p>A JavaScript framework is a prewritten collection of JavaScript code that provides
+         developers with a structure to build web applications efficiently and quickly.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2 class="section-title">Contact Me</h2>
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<section class="about" id="about">
+  <h2 class="section-title">About Me</h2>
+  <p>
+    Hello! I'm Sailakshmi, a passionate frontend developer dedicated to crafting beautiful and functional websites. I specialize in HTML, CSS, JavaScript, and modern libraries. With a strong eye for design and detail, I aim to build user experiences that are both intuitive and impactful.
+  </p>
+</section>
+
+
